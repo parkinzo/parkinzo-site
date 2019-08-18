@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parkinzo | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <script>
+       function validateSignup() {
+           var email = document.getElementById("s-email");
+           var number = document.getElementById("s-number");
+           var password = document.getElementById("s-password");
+           var regEmail = /\S+@\S+\.\S+/;
+           var regPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+           var regNumber = /^[6-9]\d{9}$/;
+           if(regEmail.test(email.value)==false) {
+               alert("Please enter valid Email.");
+               email.style.border="3px solid red";
+               email.focus();
+               return false;
+           } else if(regNumber.test(number.value)==false) {
+               alert("Enter a valid Indian number.");
+               number.style.border="3px solid red";
+               number.focus(); 
+               return false;
+           } else if(regPassword.test(password.value)==false) {
+               alert("Your password should have aleast numbers, letters and special characters and should be between 6 to 16 characters.");
+               password.style.border="3px solid red";
+               password.focus();
+               return false;
+           }
+       }
+   </script>
+    <div class="home-bg login-bg signup-bg">
+        <nav id="navbar">
+            <h1><span style="color: #ff4b20;">Park</span><span>inzo</span></h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#" style="color: #ff4b20">LOGIN</a></li>
+            </ul>
+        </nav>
+        <div class="login-bg-overlay">
+            <center>
+                <div style="color:white;" class="signup-bg-content">
+                    <h1><span style="color: #ff4b20;">Sign</span><span>up</span></h1>
+                    <div class="login signup">
+                        <form method="post" action="signup.html">
+                            <label>Username</label>&nbsp;&nbsp;<br><input id="s-username" type="text" placeholder="Enter username..." required>
+                            <br><br>
+                            <label>Email</label>&nbsp;&nbsp;<br><input id="s-email" type="email" placeholder="Enter email..." required>
+                            <br><br>
+                            <label>Mobile</label>&nbsp;&nbsp;<br><input id="s-number" type="number" placeholder="Enter mobile number..." required>
+                            <br><br>
+                            <label>Address</label>&nbsp;&nbsp;<br><input id="s-address" type="text" placeholder="Enter your address..." required>
+                            <br><br>
+                            <label>Password</label>&nbsp;&nbsp;<br><input id="s-password" type="password" placeholder="Enter password..." required>
+                            <br><br>
+                            <p>By proceeding with creating an account you agree <br> to the Parkinzo <a style="color:#4fffff;" href="#">Terms & Conditions</a> and <a style="color:#4fffff;" href="#">Privacy Policy</a>.</p>
+                            <br><br>
+                            <input class="login-btn" style="background-color: #ff4b20;border-color: #ff4b20;font-weight: 900;" type="submit" value="SIGN UP" onclick="return validateSignup()">
+                        </form>
+                        <br><br><br>
+                        <h4>Already have an account ?</h4><br><a style="background-color: #3385ff;text-decoration: none; color:white;padding: 10px;" href="#">LOGIN</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="section-border-o"><br></div>
+
+    <footer>
+        <div id="footer">
+            <div style="color: #ff4b20;" id="left-footer">
+                <br><br><br>
+                <div id="footer-site-links">
+                    <ul style="list-style-type: none;">
+                        <h2>Site Map</h2>
+                        <div style="background-color: black;height: 5px;width:50%;"></div>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Members</a></li>
+                    </ul>
+                    <ul style="list-style-type: none;">
+                        <h2>Explore</h2>
+                        <div style="background-color: black;height: 5px;width:50%;"></div>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="right-footer">
+                <h2 style="color: #ff4b20;">Where are we located ?</h2>
+                <br>
+                <div id="footer-map">
+                    <img src="images/map.JPG">
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #1c1c1c;text-align:center;">
+            <p style="color: white;">&copy;Copyright &nbsp;Parkinzo&nbsp; 2019</p>
+        </div>
+    </footer>
+
+</body></html>

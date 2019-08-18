@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Blinker';
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Blinker';
+}
+
+.container {
+    padding: 0 15% 0 15%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.home-bg {
+    background-image: url("../images/home1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+#navbar {
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Blinker', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#navbar h1 {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 300px;
+    font-size: 2rem;
+}
+
+#navbar ul {
+    padding-top: 30px;
+    margin-left: 50%;
+}
+
+#navbar ul li {
+    display: inline;
+    padding: 3%;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #4fffff;
+}
+
+.home-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+}
+
+.home-bg-content,
+.home-bg-content h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.home-bg-content h1 {
+    padding: 10% 0 0 10%;
+}
+
+.home-bg-content h2 {
+    padding: 0 0 0 10%;
+}
+
+.section-border-o {
+    background-color: #ff4b20;
+}
+
+.section-border-b {
+    background-color: #4fffff;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.column:hover {
+    color: #ff4b20;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.head h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.head p {
+    text-align: center;
+    text-indent: 10px;
+}
+
+.column p {
+    padding: 30px;
+}
+
+.try {
+    background-image: url("../images/try1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.try h1 {
+    word-spacing: 8px;
+}
+
+.try a,
+.rent a {
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.rent {
+    background-image: url("../images/rent.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+
+}
+
+.rent-content {
+    padding-left: 10%;
+}
+
+.rent-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 80vh;
+}
+
+#footer {
+    display: flex;
+    height: 300px;
+    background-color: #1c1c1c;
+}
+
+#left-footer {
+    width: 50%
+}
+
+#right-footer {
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+#footer-site-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+#footer-site-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-map img {
+    width: 350px;
+    height: 200px;
+}
+
+.about-bg {
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.about-bg .home-bg-overlay h2 {
+    word-spacing: 5px;
+}
+
+.who-we-are {
+    background-image: url("../images/who-we-are.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+}
+.who-we-are .home-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80vh;
+}
+.who-we-are h3 {
+    padding-left: 3%;
+}
+
+.how-this-works img {
+    width: 15%;
+}
+
+.behind-the-scenes img {
+    width: 30%; 
+    border-radius: 50%;
+}
+.behind-the-scenes .column:hover {
+    color: #4fffff;
+    transform: scale(1.3);
+}
+
+.login-bg {
+    background-image: url("../images/login.jpg");
+}
+.login {
+    background-color: rgba(0,0,0,0.8);
+    height: 70vh;
+    width: 40%;
+    padding-top:5%;
+}
+.login label {
+    margin-left: -40%;
+    font-size: 25px;
+}
+.login input {
+    width: 60%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid #ff4b20;
+    color: white;
+    font-size: 1.2rem;
+}
+.login-btn {
+    font-size: 20px;
+} 
+.signup {
+    background-color: rgba(0,0,0,0.9);
+    height: 70vh;
+    width: 40%;
+    padding-top:2%;
+}
+.signup-bg {
+    height: 100vh;
+}
+
+.otp-bg{
+    width:100%;
+    height:auto;
+    background-color: #fff7f4 ; 
+
+}
+.otp-add{
+    display: flex;
+    width:90%;
+    height:auto;
+    background-color: white;
+    margin-left:2%;
+    margin-top: 40px;
+    padding: 20px;
+    border: 5px solid #ff9980;
+    border-radius: 10px; 
+}
+.otp-start-time {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.otp {
+    margin-left: 40%;
+}
+
+.Contact{
+    background-image: url("../images/contactus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+textarea {
+    width: 60%;
+    height: 110px;
+    border: 2px solid #ff4b20;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+}
+
+
+
+
+
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding-left: 12%;
+}
+
+.grid-container h3 {
+    font-size: 30px;
+}
+.grid-container p {
+    font-size: 20px;
+}
+*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:500px) {
+    .column {
+        width: 100%;
+    }
+}
